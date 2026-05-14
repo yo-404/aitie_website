@@ -155,6 +155,94 @@
 			color: #f3d5f7;
 		}
 
+		/* Footer layout tweaks */
+		.footer_left-wrapper {
+			display: flex;
+			align-items: flex-start;
+			justify-content: space-between;
+			gap: 48px;
+			flex-wrap: wrap;
+		}
+
+		.footer_left-box {
+			flex: 0 1 auto;
+		}
+
+		.footer_left-box.logo-box {
+			flex: 0 0 auto;
+		}
+
+		.footer_left-box.contact-box {
+			flex: 0 1 auto;
+			text-align: right;
+		}
+
+		.footer_left-wrapper .footer_contact-block {
+			color: #e2e5ff;
+			font-size: 0.95rem;
+			line-height: 1.6;
+		}
+
+		.footer_left-wrapper .footer_contact-block > div {
+			margin-bottom: 12px;
+		}
+
+		.footer_left-wrapper .footer_contact-label {
+			font-weight: 600;
+		}
+
+		.footer_left-wrapper .footer_contact-email {
+			color: #696C96;
+			text-decoration: none;
+		}
+
+		.footer_left-wrapper .footer_contact-email:hover {
+			text-decoration: underline;
+		}
+
+		.footer_left-wrapper address {
+			display: inline;
+			font-style: normal;
+		}
+		.footer_bottom-wrapper {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			gap: 16px;
+		}
+
+		.footer_socials {
+			display: flex;
+			align-items: center;
+			gap: 12px;
+		}
+
+		.footer_left-wrapper .footer_contact-block {
+			flex: 1 1 18rem;
+			max-width: 32rem;
+			margin-top: 0;
+			text-align: right;
+			color: #696C96;
+			font-size: 0.95rem;
+			line-height: 1.4;
+		}
+
+		.footer_left-wrapper .footer_contact-label {
+			font-weight: 600;
+		}
+
+		.footer_left-wrapper .footer_contact-block a {
+			color: inherit;
+			text-decoration: none;
+			display: inline-block;
+			margin-bottom: 6px;
+		}
+
+		.footer_left-wrapper .footer_contact-block address {
+			font-style: normal;
+			opacity: 0.92;
+		}
+
 		/* Hero + W-shaped grid cards: white text */
 		.section_header,
 		.section_header .header_grid,
@@ -2207,8 +2295,9 @@
 							<div class="padding-bottom padding-xlarge">
 								<div class="w-layout-grid footer_top-wrapper">
 									<div class="footer_left-wrapper">
-										<div class="logo_embed w-embed">
-											<svg width="256" height="106.5" viewBox="0 0 512 213" fill="none"
+										<div class="footer_left-box logo-box">
+											<div class="logo_embed w-embed">
+												<svg width="256" height="106.5" viewBox="0 0 512 213" fill="none"
 												xmlns="http://www.w3.org/2000/svg">
 												<path
 													d="M106.732 73.21C116.22 82.2546 120.963 94.7779 120.963 110.843V206.223C120.963 207.804 119.698 209.069 118.117 209.069H96.7706C95.4107 209.069 94.2406 208.089 93.956 206.76L91.6791 195.122C79.8199 206.792 65.3992 212.642 48.4485 212.642C39.6886 212.642 31.6243 210.966 24.2242 207.582C16.8241 204.199 10.942 199.36 6.57788 193.067C2.21371 186.774 0 179.532 0 171.309V161.727C0 148.951 5.37615 138.736 16.1601 131.083C26.9124 123.43 41.6809 119.603 60.4974 119.603H87.3149V109.768C87.3149 101.198 85.1645 94.9361 80.8952 91.0147C76.5943 87.0932 70.0796 85.1324 61.3197 85.1324C53.6666 85.1324 46.4878 86.0495 39.8467 87.8838C33.9646 89.4966 27.8294 91.8052 21.4729 94.8412C20.0498 95.5053 18.3738 94.9677 17.678 93.5446L9.70866 77.4161C9.04455 76.0562 9.51893 74.4117 10.8155 73.6527C27.0072 64.3551 44.8434 59.7064 64.324 59.7064C83.8046 59.7064 97.245 64.2287 106.732 73.2417V73.21ZM72.6728 183.864C78.2387 181.492 83.1089 177.95 87.3149 173.207V140.918H63.7864C43.7049 140.918 33.6799 148.318 33.6799 163.087V168.558C33.6799 174.408 35.4509 178.994 39.0245 182.378C42.5664 185.762 47.9109 187.438 55.0264 187.438C61.2248 187.438 67.1069 186.268 72.6728 183.896V183.864Z"
@@ -2228,6 +2317,13 @@
 											</svg>
 
 										</div>
+									</div>
+									<div class="footer_left-box contact-box">
+										<div class="footer_contact-block">
+											<div><span class="footer_contact-label">Email</span> - <a href="mailto:app@aitie.co" class="footer_contact-email">app@aitie.co</a></div>
+											<div><span class="footer_contact-label">Address</span> - <address>Aitie Technologies, 9th floor, RMZ lattitide(commericial), Bellary Rd, Vinayakanagar, Kodigehalli, Byatarayanapura, Bengaluru</address></div>
+										</div>
+									</div>
 									</div>
 									<div id="w-node-ff122e6f-467c-811c-cf34-d71f049ed3af-049ed3a8"
 										class="w-layout-grid footer_menu-wrapper">
@@ -2389,6 +2485,45 @@
 														</svg>
 													</div>
 												</div>
+											</a><a href="#section-waitlist" class="footer_link w-inline-block">
+												<div>Join waitlist</div>
+												<div data-wf--element---icon-square--variant="second-section"
+													class="square_icon">
+													<div
+														class="square_icon-square is-1 w-variant-912defac-1002-a70b-a7cc-199186349174 w-embed">
+														<svg xmlns="http://www.w3.org/2000/svg" width="100%"
+															height="100%" viewBox="0 0 13 13" fill="none">
+															<path
+																d="M1.95068 1.34131H11.0493C11.3605 1.3414 11.6126 1.5936 11.6128 1.90479V11.0942C11.6128 11.4056 11.3607 11.6586 11.0493 11.6587H1.95068C1.63944 11.6585 1.38721 11.4055 1.38721 11.0942V1.90479C1.38744 1.59369 1.63959 1.34154 1.95068 1.34131Z"
+																fill="currentColor" stroke="none" />
+														</svg>
+													</div>
+													<div
+														class="square_icon-square is-2 w-variant-912defac-1002-a70b-a7cc-199186349174 w-embed">
+														<svg xmlns="http://www.w3.org/2000/svg" width="100%"
+															height="100%" viewBox="0 0 13 13" fill="none">
+															<path
+																d="M1.95068 1.34131H11.0493C11.3605 1.3414 11.6126 1.5936 11.6128 1.90479V11.0942C11.6128 11.4056 11.3607 11.6586 11.0493 11.6587H1.95068C1.63944 11.6585 1.38721 11.4055 1.38721 11.0942V1.90479C1.38744 1.59369 1.63959 1.34154 1.95068 1.34131Z"
+																fill="currentColor" stroke="none" />
+														</svg>
+													</div>
+													<div class="square_icon-square is-3 w-embed">
+														<svg xmlns="http://www.w3.org/2000/svg" width="100%"
+															height="100%" viewBox="0 0 13 13" fill="none">
+															<path
+																d="M1.95068 1.34131H11.0493C11.3605 1.3414 11.6126 1.5936 11.6128 1.90479V11.0942C11.6128 11.4056 11.3607 11.6586 11.0493 11.6587H1.95068C1.63944 11.6585 1.38721 11.4055 1.38721 11.0942V1.90479C1.38744 1.59369 1.63959 1.34154 1.95068 1.34131Z"
+																fill="currentColor" stroke="none" />
+														</svg>
+													</div>
+													<div class="square_icon-square is-4 w-embed">
+														<svg xmlns="http://www.w3.org/2000/svg" width="100%"
+															height="100%" viewBox="0 0 13 13" fill="none">
+															<path
+																d="M1.95068 1.34131H11.0493C11.3605 1.3414 11.6126 1.5936 11.6128 1.90479V11.0942C11.6128 11.4056 11.3607 11.6586 11.0493 11.6587H1.95068C1.63944 11.6585 1.38721 11.4055 1.38721 11.0942V1.90479C1.38744 1.59369 1.63959 1.34154 1.95068 1.34131Z"
+																fill="currentColor" stroke="none" />
+														</svg>
+													</div>
+												</div>
 											</a>
 										</div>
 									</div>
@@ -2400,10 +2535,11 @@
 							<div class="padding-top padding-medium">
 								<div class="footer_bottom-wrapper">
 									<div class="footer_credit-text">©2026 Aitie</div>
-									<a id="w-node-de956000-b93b-d521-3862-5044146ec640-049ed3a8"
-										href="https://www.linkedin.com/company/aitie-app/" target="_blank"
-										class="w-inline-block">
-										<div class="icon-embed-xsmall w-embed">
+									<div class="footer_socials">
+										<a id="w-node-de956000-b93b-d521-3862-5044146ec640-049ed3a8"
+											href="https://www.linkedin.com/company/aitie-app/" target="_blank"
+											class="w-inline-block">
+											<div class="icon-embed-xsmall w-embed">
 											<svg xmlns="http://www.w3.org/2000/svg"
 												xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img"
 												width="100%" height="100%" preserveAspectRatio="xMidYMid meet"
@@ -2412,11 +2548,21 @@
 													d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037c-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85c3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.06 2.06 0 0 1-2.063-2.065a2.064 2.064 0 1 1 2.063 2.065m1.782 13.019H3.555V9h3.564zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0z">
 												</path>
 											</svg>
-										</div>
-									</a>
+											</div>
+											</a>
+											<a href="mailto:app@aitie.co" class="w-inline-block footer_email-icon" aria-label="Email app@aitie.co">
+												<div class="icon-embed-xsmall w-embed">
+													<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+	<path d="M0 0h24v24H0z" fill="none" />
+	<path fill="currentColor" d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2m0 4l-8 5l-8-5V6l8 5l8-5z" />
+</svg>
+
+												</div>
+											</a>
+									</div>
 									<div id="w-node-ff122e6f-467c-811c-cf34-d71f049ed3c9-049ed3a8"
 										class="w-layout-grid footer_legal-list">
-										<a href="/legal" class="footer_legal-link">Legal</a>
+										<class="footer_legal-link">All Rights Reserved</class=>
 									</div>
 								</div>
 							</div>
