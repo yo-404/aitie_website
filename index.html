@@ -3436,7 +3436,8 @@
 			const errorEl = document.getElementById('waitlist-error');
 			const successEl = document.getElementById('waitlist-success');
 
-			const WEBHOOK_URL = 'https://n8n.srv775902.hstgr.cloud/webhook-test/6aa82dc4-f9d0-4fb2-89e5-ae34313e6340';
+			const WEBHOOK_URL = process.env.WEBHOOK_URL;
+
 
 			function validateEmail(email) {
 				return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
